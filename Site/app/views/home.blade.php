@@ -21,7 +21,7 @@
                                 <table class="table table-striped display table-bordered table-hover" id="example">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
+                                            <th>ID do Usuario</th>
                                             <th>Nome</th>
                                             <th>Tipo Sanguineo</th>
                                             <th>Cidade</th>
@@ -32,10 +32,9 @@
                                     	@foreach($pessoas as $pessoa)
                                         <tr>
                                             <td>{{$pessoa->idpessoa}}</td>
-                                            <td>{{$pessoa->nome}}</td>
-                                            <td>A+</td>
-                                            <td>{{$pessoa->cidade_id}}</td>
-                                            
+                                            <td>{{$pessoa->nomePessoa}}</td>
+                                            <td>{{$pessoa->tipo}}</td>
+                                            <td>{{$pessoa->nomeCidade}}</td>   
                                         </tr>
                                         @endforeach
                                     </tbody>
