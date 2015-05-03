@@ -1,6 +1,7 @@
 <?php
 namespace app\controllers;
 use app\models\Pessoa;
+use app\models\TipoSangue;
 class HomeController extends \BaseController {
 
 	/*
@@ -19,9 +20,11 @@ class HomeController extends \BaseController {
 	public function index()
 	{
 		$pessoa = new Pessoa();
+		$tipoSangue = new TipoSangue();
+		//return $pessoa->dataTableHome();
 		return \View::make('home')->with([
 			'title'=>'Home',
-			'pessoas' =>  $pessoa->listaPessoa()
+			'pessoas' =>  $pessoa->dataTableHome()
 		]);
 	}
 

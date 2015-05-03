@@ -14,11 +14,20 @@
 		}
 
 		public function verificaCpf($cpf){
-			 if(Pessoa::where('cpf',$cpf)->select('cpf')->exists()){
+			if(Pessoa::where('cpf',$cpf)->select('cpf')->exists()){
 			 	return true;
-			 }else{
+			}else{
 			 	return false;
-			 }
-			 
+			} 
 		}
+
+		public function dataTableHome(){
+			return \DB::table('pessoa AS p')
+				->join('tipo_sangue AS tp','p.tipo_sangue_idtipo_sangue','=','tp.idtipo_sangue')
+				->join('cidade AS c','p.cidade_id','=','c.id')
+				->select('p.idpessoa','p.nome AS nomePessoa','tp.tipo','c.nome AS nomeCidade')
+				->get();
+		}
+
+
 	}
