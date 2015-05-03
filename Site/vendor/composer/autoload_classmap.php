@@ -17,6 +17,7 @@ return array(
     'Whoops\\Provider\\Zend\\RouteNotFoundStrategy' => $vendorDir . '/filp/whoops/src/deprecated/Zend/RouteNotFoundStrategy.php',
     'app\\controllers\\HomeController' => $baseDir . '/app/controllers/HomeController.php',
     'app\\controllers\\PessoaController' => $baseDir . '/app/controllers/PessoaController.php',
+    'app\\controllers\\solicitaDoacaoController' => $baseDir . '/app/controllers/solicitaDoacaoController.php',
     'app\\models\\Cidade' => $baseDir . '/app/models/CidadeModel.php',
     'app\\models\\Pessoa' => $baseDir . '/app/models/PessoaModel.php',
     'app\\models\\TipoSangue' => $baseDir . '/app/models/TipoSangueModel.php',
