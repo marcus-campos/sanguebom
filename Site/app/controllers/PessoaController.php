@@ -42,8 +42,6 @@ class PessoaController extends \BaseController {
 			'tipo_sangue_idtipo_sangue' => \Input::get('tipoSangue'),
 			'cidade_id' => \Input::get('cidade')
 		];
-
-		//dd($pessoa->verificaCpf(\Input::get('cpf')));
 		if($pessoa->verificaCpf(\Input::get('cpf'))){
 			return \Redirect::back()->with('mensagem','<p class="bg-danger">Esse CPF ja está cadastrado em nosso sistema!!</p>');
 		}else{
