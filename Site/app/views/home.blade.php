@@ -9,39 +9,34 @@
     		$('#example').DataTable();
 		});
 	</script>
-	<div class="panel panel-default">
-                        <div class="panel-heading">
-                            Doadores
-                        </div>
-                        <div class="panel-body">
-                        	@if(Session::has('mensagem'))
-  								{{Session::get('mensagem')}}
-  							@endif
-                            <div class="table-responsive">
-                                <table class="table table-striped display table-bordered table-hover" id="example">
-                                    <thead>
-                                        <tr>
-                                            <th>ID do Usuario</th>
-                                            <th>Nome</th>
-                                            <th>Tipo Sanguineo</th>
-                                            <th>Cidade</th>
-                                            
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    	@foreach($pessoas as $pessoa)
-                                        <tr>
-                                            <td>{{$pessoa->idpessoa}}</td>
-                                            <td>{{$pessoa->nomePessoa}}</td>
-                                            <td>{{$pessoa->tipo}}</td>
-                                            <td>{{$pessoa->nomeCidade}}</td>   
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+	
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th><center>Tipo do Sangue</center></th>
+                        <th><center>Número de doadores cadastrados</center></th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach($pessoas as $pessoa)
+                    <tr>
+                        <td width="50%" align="center">
+                             {{$pessoa->tipo}}
+                        </td>
+                        <td align="center">
+                            
+                            {{$pessoa->qtd}}
+                        </td>
+                    </tr>
+                     @endforeach
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+   
 @stop
 
 	

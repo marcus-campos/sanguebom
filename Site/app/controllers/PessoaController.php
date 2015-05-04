@@ -1,6 +1,6 @@
 <?php
 namespace app\controllers;
-use Carbon\Carbon;
+//use Carbon\Carbon;
 use app\models\TipoSangue;
 use app\models\Pessoa;
 use app\models\Cidade;
@@ -34,11 +34,11 @@ class PessoaController extends \BaseController {
 		$pessoa = new Pessoa();
 		$dadosInsert = [
 			'nome' => \Input::get('nome'),
-			'data_nasc' => date("Y/m/d", strtotime(\Input::get('dataNascimento'))),
+			//'data_nasc' => date("Y/m/d", strtotime(\Input::get('dataNascimento'))),
 			'cpf' => \Input::get('cpf'),
 			'email' => \Input::get('email'),
-			'telefone' => \Input::get('telefone'),
-			'data_cadastro' => Carbon::now(),
+			//'telefone' => \Input::get('telefone'),
+			//'data_cadastro' => Carbon::now(),
 			'tipo_sangue_idtipo_sangue' => \Input::get('tipoSangue'),
 			'cidade_id' => \Input::get('cidade')
 		];

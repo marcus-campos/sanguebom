@@ -29,5 +29,13 @@
 				->get();
 		}
 
+		public function contaTipoSangue(){
+			return \DB::table('pessoa AS p')
+				->join('tipo_sangue AS t','p.tipo_sangue_idtipo_sangue','=','t.idtipo_sangue')
+				->groupBy('p.tipo_sangue_idtipo_sangue')
+				->select('t.tipo',\DB::raw('count(*) AS qtd'),'p.tipo_sangue_idtipo_sangue')
+				->get();
+		}
+
 
 	}

@@ -21,10 +21,12 @@ class HomeController extends \BaseController {
 	{
 		$pessoa = new Pessoa();
 		$tipoSangue = new TipoSangue();
+
+		//return $pessoa->contaTipoSangue();
 		//return $pessoa->dataTableHome();
 		return \View::make('home')->with([
 			'title'=>'Home',
-			'pessoas' =>  $pessoa->dataTableHome()
+			'pessoas' =>  $pessoa->contaTipoSangue()
 		]);
 	}
 

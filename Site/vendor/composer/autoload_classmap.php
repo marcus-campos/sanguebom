@@ -19,6 +19,8 @@ return array(
     'app\\controllers\\PessoaController' => $baseDir . '/app/controllers/PessoaController.php',
     'app\\controllers\\solicitaDoacaoController' => $baseDir . '/app/controllers/solicitaDoacaoController.php',
     'app\\models\\Cidade' => $baseDir . '/app/models/CidadeModel.php',
+    'app\\models\\LocalDoacao' => $baseDir . '/app/models/LocalDoacao.php',
     'app\\models\\Pessoa' => $baseDir . '/app/models/PessoaModel.php',
+    'app\\models\\SolicitaDoacao' => $baseDir . '/app/models/solicitaDoacaoModel.php',
     'app\\models\\TipoSangue' => $baseDir . '/app/models/TipoSangueModel.php',
 );

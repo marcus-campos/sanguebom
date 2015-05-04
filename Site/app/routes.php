@@ -15,4 +15,5 @@ Route::resource('/','app\controllers\HomeController@index',['only'=>['index']]);
 
 Route::resource('/cadastraDoador','app\controllers\PessoaController@create');
 Route::post('/cadastraDoador','app\controllers\PessoaController@store');
-Route::resource('/solicitaDoacao','app\controllers\solicitaDoacaoController@index',['only'=>['index']]);
+Route::resource('/solicitaDoacao','app\controllers\solicitaDoacaoController@create');
+Route::post('/cadastraSolicitaDoacao','app\controllers\solicitaDoacaoController@store');
