@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="CupDev" />
-    <meta name="author" content="Miguel Maia" />
+    <meta name="author" content="Marcus Vinícius Campos & Pedro Henrique Lima Pinheiro" />
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
@@ -19,10 +19,6 @@
 
     <link href="assets/css/jquery.dataTables.css" rel="stylesheet">
 
-
-
-     
-
     @yield('css')
      <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,16 +29,7 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <strong>Email: </strong>info@yourdomain.com
-                    &nbsp;&nbsp;
-                    <strong>Support: </strong>+90-897-678-44
-                </div>
-
-            </div>
-        </div>
+       
     </header>
     <!-- HEADER END-->
     <div class="navbar navbar-inverse set-radius-zero">
@@ -63,32 +50,7 @@
             <div class="left-div">
                 <div class="user-settings-wrapper">
                     <ul class="nav">
-
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-                                <span class="glyphicon glyphicon-user" style="font-size: 25px;"></span>
-                            </a>
-                            <div class="dropdown-menu dropdown-settings">
-                                <div class="media">
-                                    <a class="media-left" href="#">
-                                        <img src="assets/img/64-64.jpg" alt="" class="img-rounded" />
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Jhon Deo Alex </h4>
-                                        <h5>Developer & Designer</h5>
-
-                                    </div>
-                                </div>
-                                <hr />
-                                <h5><strong>Personal Bio : </strong></h5>
-                                Anim pariatur cliche reprehen derit.
-                                <hr />
-                                <a href="#" class="btn btn-info btn-sm">Full Profile</a>&nbsp; <a href="login.html" class="btn btn-danger btn-sm">Logout</a>
-
-                            </div>
-                        </li>
-
-
+                        <br /><br />
                     </ul>
                 </div>
             </div>
@@ -135,7 +97,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    &copy; 2015 CupDev | By : <a href="http://www.cupdev.com/" target="_blank">Miguel Maia</a>
+                    &copy; 2015 CupDev | By : <a href="http://www.cupdev.com/" target="_blank">Marcus Vinícius Campos & Pedro Henrique Lima Pinheiro</a>
                 </div>
 
             </div>
