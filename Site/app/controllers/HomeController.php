@@ -20,13 +20,25 @@ class HomeController extends \BaseController {
 	public function index()
 	{
 		$pessoa = new Pessoa();
-		$tipoSangue = new TipoSangue();
+		//$tipoSangue = new TipoSangue();
 
-		//return $pessoa->contaTipoSangue();
-		//return $pessoa->dataTableHome();
+		$feed = new \SimplePie();
+
+		$feed->set_feed_url('http://www.hemominas.mg.gov.br/?format=feed');
+
+		$feed->enable_order_by_date(false);
+
+		$feed->set_cache_location($_SERVER['DOCUMENT_ROOT'] . '/cache');
+
+		$feed->handle_content_type();
+
+		$feed->init();
+
+
 		return \View::make('home')->with([
 			'title'=>'Home',
-			'pessoas' =>  $pessoa->contaTipoSangue()
+			'feed' => $feed
+			//'pessoas' =>  $pessoa->contaTipoSangue()
 		]);
 	}
 

@@ -17,3 +17,5 @@ Route::resource('/cadastraDoador','app\controllers\PessoaController@create');
 Route::post('/cadastraDoador','app\controllers\PessoaController@store');
 Route::resource('/solicitaDoacao','app\controllers\solicitaDoacaoController@create');
 Route::post('/cadastraSolicitaDoacao','app\controllers\solicitaDoacaoController@store');
+Route::resource('/quem-pode-doar','app\controllers\PessoaController@quemDoa');
+Route::resource('/doadores','app\controllers\PessoaController@doadores');

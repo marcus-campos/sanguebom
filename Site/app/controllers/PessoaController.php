@@ -51,5 +51,20 @@ class PessoaController extends \BaseController {
 		
 	}
 
+	public function quemDoa(){
+		return \View::make('quemDoa')->with(['title' => 'Quem Pode Doar ?']);
+	}
+
+	public function doadores(){
+		$pessoa = new Pessoa();
+		$tipoSangue = new TipoSangue();
+		return \View::make('doadores')->with([
+			'title' => 'Doadores',
+			'pessoas' =>  $pessoa->contaTipoSangue()
+		]);
+	}
+
+
+
 
 }

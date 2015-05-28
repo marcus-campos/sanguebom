@@ -64,9 +64,10 @@
                     <div class="navbar-collapse collapse ">
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
                             <li><a class="menu-top-active"  href="{{URL::to('/')}}">Home</a></li>
+                            <li><a href="{{URL::to('/doadores')}}">Doadores</a></li>
                             <li><a href="{{URL::to('/cadastraDoador')}}">Cadastrar Doador</a></li>
                             <li><a href="{{URL::to('/solicitaDoacao')}}">Solicitar Doação</a></li>
-                            <li><a href="forms.html">Noticias</a></li>
+                            <li><a href="{{URL::to('/quem-pode-doar')}}">Quem Pode Doar ?</a></li>
                         </ul>
                     </div>
                 </div>
